@@ -86,6 +86,9 @@ call plug#begin('~/AppData/Local/nvim/plugged')
   " Git Signs
   Plug 'lewis6991/gitsigns.nvim'
 
+  " vim-fugitive
+  Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " Bring all configuration files from lua folder
