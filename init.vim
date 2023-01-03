@@ -48,7 +48,7 @@ set noshowmode
 " This is where we add the plugins. For each operating system, make sure to
 " change this path.
 " If Windows, then it's ~/AppData/Local/nvim/plugged/
-" If Unix then it's ~/config/nim/plugged
+" If Unix then it's ~/config/nvim/plugged
 call plug#begin('~/AppData/Local/nvim/plugged')
   " Gruvbox theme
   Plug 'gruvbox-community/gruvbox'
