@@ -49,7 +49,7 @@ set noshowmode
 " change this path.
 " If Windows, then it's ~/AppData/Local/nvim/plugged/
 " If Unix then it's ~/config/nvim/plugged
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin(stdpath('config') . '/plugged')
   " Gruvbox theme
   Plug 'gruvbox-community/gruvbox'
 
