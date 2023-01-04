@@ -49,7 +49,7 @@ set noshowmode
 " change this path.
 " If Windows, then it's ~/AppData/Local/nvim/plugged/
 " If Unix then it's ~/config/nvim/plugged
-call plug#begin('~/AppData/Local/nvim/plugged')
+call plug#begin(stdpath('config') . '/plugged')
   " Gruvbox theme
   Plug 'gruvbox-community/gruvbox'
 
@@ -57,8 +57,6 @@ call plug#begin('~/AppData/Local/nvim/plugged')
   Plug 'nvim-lua/plenary.nvim'
   " The main Telescope plugin
   Plug 'nvim-telescope/telescope.nvim'
-  " An optional plugin recommended by Telescope docs
-  Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
   " Lightline
   Plug 'itchyny/lightline.vim'
   " Treesitter
