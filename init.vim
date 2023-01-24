@@ -102,3 +102,4 @@ set background=dark
 
 " To open NerdTree, I go Ctrl + n
 nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-m> :Mason<CR>
