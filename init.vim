@@ -53,6 +53,9 @@ call plug#begin(stdpath('config') . '/plugged')
   " Gruvbox theme
   Plug 'gruvbox-community/gruvbox'
 
+  " Tokyo night theme
+  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
   " Telescope requires plenary to function
   Plug 'nvim-lua/plenary.nvim'
   " The main Telescope plugin
@@ -96,7 +99,7 @@ call plug#end()
 lua require('nguyen')
 
 " Gruvbox theme
-colorscheme gruvbox
+colorscheme tokyonight
 " Use this for dark color schemes
 set background=dark
 
