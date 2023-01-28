@@ -6,3 +6,4 @@ telescope.setup {}
 -- My own quick keymaps for telescope
 -- In normal mode fdf = find files
 vim.keymap.set('n', 'fdf', builtin.find_files, {})
+vim.keymap.set('n', 'rg', builtin.live_grep, {})
