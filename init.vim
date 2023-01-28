@@ -99,7 +99,7 @@ call plug#end()
 lua require('nguyen')
 
 " Gruvbox theme
-colorscheme tokyonight
+colorscheme gruvbox
 " Use this for dark color schemes
 set background=dark
 
