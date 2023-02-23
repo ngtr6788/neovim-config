@@ -4,4 +4,4 @@ require('nguyen/lightline')
 require('nguyen/treesitter')
 require('nguyen/lsp')
 require('nguyen/gitsigns')
-
+require('nguyen/trouble')

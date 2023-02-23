@@ -45,7 +45,8 @@ set showmatch
 " hid the default Vim mode
 set noshowmode
 
-" This is where we add the plugins. For each operating system, make sure to
+let mapleader = ";"
+
 " change this path.
 " If Windows, then it's ~/AppData/Local/nvim/plugged/
 " If Unix then it's ~/config/nvim/plugged
@@ -93,6 +94,8 @@ call plug#begin(stdpath('config') . '/plugged')
   " vim-fugitive
   Plug 'tpope/vim-fugitive'
 
+  " trouble
+  Plug 'folke/trouble.nvim'
 call plug#end()
 
 " Bring all configuration files from lua folder
