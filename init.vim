@@ -45,7 +45,7 @@ set showmatch
 " hid the default Vim mode
 set noshowmode
 
-let mapleader = ";"
+let mapleader=";"
 
 " change this path.
 " If Windows, then it's ~/AppData/Local/nvim/plugged/
@@ -96,6 +96,8 @@ call plug#begin(stdpath('config') . '/plugged')
 
   " trouble
   Plug 'folke/trouble.nvim'
+
+  Plug 'NvChad/nvterm'
 call plug#end()
 
 " Bring all configuration files from lua folder
@@ -106,6 +108,7 @@ colorscheme gruvbox
 " Use this for dark color schemes
 set background=dark
 
-" To open NerdTree, I go Ctrl + n
-nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-m> :Mason<CR>
+" To open NerdTree, I go <leader>n
+nnoremap <leader>n :NERDTreeToggle<CR>
+" To open Mason, I go <leader>m 
+nnoremap <leader>m :Mason<CR>

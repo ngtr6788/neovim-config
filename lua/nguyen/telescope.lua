@@ -4,6 +4,6 @@ local builtin = require('telescope.builtin')
 telescope.setup {}
 
 -- My own quick keymaps for telescope
--- In normal mode fdf = find files
-vim.keymap.set('n', 'fdf', builtin.find_files, {})
-vim.keymap.set('n', 'rg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>gs', builtin.git_status, {})
+vim.keymap.set('n', '<leader>rg', builtin.live_grep, {})
