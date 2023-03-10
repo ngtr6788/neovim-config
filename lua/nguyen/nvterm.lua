@@ -1,6 +1,8 @@
 require('nvterm').setup()
 
-vim.keymap.set('n', '<leader>t', 
+local toggle_modes = {'n', 't'}
+
+vim.keymap.set(toggle_modes, '<leader>t', 
   function () require('nvterm.terminal').toggle('horizontal') end,
   { noremap = true, silent = true }
 )
