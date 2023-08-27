@@ -97,7 +97,11 @@ call plug#begin(stdpath('config') . '/plugged')
   " trouble
   Plug 'folke/trouble.nvim'
 
+  " Open a terminal inside neovim
   Plug 'NvChad/nvterm'
+
+  " Comment plugin
+  Plug 'numToStr/Comment.nvim'
 call plug#end()
 
 " Bring all configuration files from lua folder
