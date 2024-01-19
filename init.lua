@@ -1,3 +1,7 @@
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -19,7 +23,7 @@ vim.cmd('syntax on')
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
-vim.opt.expandtab = false
+vim.opt.expandtab = true
 
 -- adds line numbers
 vim.opt.number = true
@@ -87,10 +91,10 @@ require("lazy").setup({
     "nvim-treesitter/nvim-treesitter", -- Treesitter
   },
   {
-    "preservim/nerdtree", -- NerdTree
+    "nvim-tree/nvim-tree.lua", -- nvim-tree
     keys = {
-      { '<leader>n', ':NERDTreeToggle<CR>', { noremap = true, silent = true } }
-    }
+      { '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true } }
+    },
   },
   {
     "neovim/nvim-lspconfig", -- LSP Support
@@ -150,5 +154,3 @@ require("lazy").setup({
 
 -- Bring all configuration files from lua folder
 require('nguyen')
-
-
