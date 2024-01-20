@@ -134,6 +134,8 @@ require("lazy").setup({
   },
   {
     "VonHeikemen/lsp-zero.nvim", -- LSP Zero
+    branch = "v3.x",
+    lazy = true,
   },
   {
     "lewis6991/gitsigns.nvim", -- Git Signs
