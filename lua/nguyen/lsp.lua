@@ -1,5 +1,11 @@
 local lsp_zero = require("lsp-zero")
 
+-- To learn about the key bindings, incling gl, 
+-- check out https://github.com/VonHeikemen/lsp-zero.nvim#keybindings
+lsp_zero.on_attach(function(_, bufnr)
+  lsp_zero.default_keymaps({buffer = bufnr})
+end)
+
 require("mason").setup({})
 require("mason-lspconfig").setup({
   handlers = {
