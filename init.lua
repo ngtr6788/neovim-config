@@ -156,5 +156,7 @@ require("lazy").setup({
   },
 })
 
+vim.keymap.set('n', '<leader>l', '<cmd>:Lazy<CR>', { noremap = true, silent = true })
+
 -- Bring all configuration files from lua folder
 require('nguyen')
