@@ -8,8 +8,8 @@ require("nvim-tree").setup({
         file = false,
         folder = false,
       },
+      symlink_arrow = " -> ",
       glyphs = {
-        symlink = "->",
         modified = "○",
         folder = {
           arrow_closed = "▶",
