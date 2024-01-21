@@ -73,10 +73,10 @@ vim.opt.background = 'dark'
 require("lazy").setup({
   {
     "gruvbox-community/gruvbox", -- Gruvbox theme
-    config = function() vim.cmd("colorscheme gruvbox") end,
   },
   {
     "folke/tokyonight.nvim", -- Tokyo night theme
+    config = function() vim.cmd("colorscheme tokyonight") end,
   },
   {
     "nvim-lua/plenary.nvim", -- Telescope dependency
