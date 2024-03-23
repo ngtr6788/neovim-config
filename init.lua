@@ -69,6 +69,15 @@ vim.g.mapleader = ';'
 -- Use this for dark color schemes
 vim.opt.background = 'dark'
 
+-- Set terminal to be Git Bash as default if on Windows
+if vim.fn.has('win32') or vim.fn.has('win64') then
+  vim.opt.shell = 'C:/Program Files/Git/usr/bin/bash.exe'
+  vim.opt.shellcmdflag = '-c'
+  vim.cmd [[
+    autocmd TermOpen * if &shell =~ 'bash' | set nonumber norelativenumber | endif
+  ]]
+end
+
 -- Lazy load plugins with lazy.nvim
 require("lazy").setup({
   {
