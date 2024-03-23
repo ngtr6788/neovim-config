@@ -1,5 +1,5 @@
 vim.g.lightline = {
-  colorscheme = 'one',
+  colorscheme = 'seoul256',
   active = {
     left = {
       { 'mode', 'past' },
