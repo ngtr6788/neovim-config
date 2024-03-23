@@ -71,7 +71,6 @@ vim.opt.background = 'dark'
 
 -- Set terminal to be Git Bash as default if on Windows
 if vim.fn.has('win16') == 1 or vim.fn.has('win32') == 1 or vim.fn.has('win64') == 1 then
-  vim.opt.background = 'light'
   vim.opt.shell = 'C:/Program Files/Git/usr/bin/bash.exe'
   vim.opt.shellcmdflag = '-c'
   vim.cmd [[
