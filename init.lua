@@ -94,13 +94,18 @@ require("lazy").setup({
     "nvim-telescope/telescope.nvim", -- Telescope
   },
   {
-    "itchyny/lightline.vim", -- Lightline
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    config = function() require('lualine').setup({
+      options = { theme = "gruvbox" }
+    }) end
   },
   {
     "nvim-treesitter/nvim-treesitter", -- Treesitter
   },
   {
     "nvim-tree/nvim-tree.lua", -- nvim-tree
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
     keys = {
       { '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true } }
     },
