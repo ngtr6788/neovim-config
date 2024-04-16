@@ -6,7 +6,7 @@ require('nvterm').setup({
     type_opts = {
       float = {
         relative = 'editor',
-        row = (1 - height) / 2,
+        row = (0.95 - height) / 2,
         col = (1 - width) / 2,
         width = width,
         height = height,
