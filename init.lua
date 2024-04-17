@@ -168,6 +168,9 @@ require("lazy").setup({
     "numToStr/Comment.nvim", -- Comment plugin
     config = function () require('Comment').setup() end,
   },
+  {
+    "folke/neodev.nvim", opts = {}
+  },
 })
 
 vim.keymap.set('n', '<leader>l', '<cmd>:Lazy<CR>', { noremap = true, silent = true })

@@ -1,4 +1,8 @@
-require("lspconfig").rust_analyzer.setup {
+require("neodev").setup({})
+
+local lspconfig = require("lspconfig")
+
+lspconfig.rust_analyzer.setup {
 	settings = {
 		["rust-analyzer"] = {
 			checkOnSave = true,
@@ -12,3 +16,13 @@ require("lspconfig").rust_analyzer.setup {
     },
   },
 }
+
+lspconfig.lua_ls.setup({
+  settings = {
+    Lua = {
+      completion = {
+        callSnippet = "Replace"
+      }
+    }
+  }
+})
