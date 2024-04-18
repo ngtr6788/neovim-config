@@ -78,11 +78,12 @@ if vim.fn.has('win16') == 1 or vim.fn.has('win32') == 1 or vim.fn.has('win64') =
   ]]
 end
 
+local color_theme = "tokyonight"
+
 -- Lazy load plugins with lazy.nvim
 require("lazy").setup({
   {
     "gruvbox-community/gruvbox", -- Gruvbox theme
-    config = function() vim.cmd("colorscheme gruvbox") end,
   },
   {
     "folke/tokyonight.nvim", -- Tokyo night theme
@@ -96,9 +97,12 @@ require("lazy").setup({
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function() require('lualine').setup({
-      options = { theme = "gruvbox" }
-    }) end
+    config = function()
+      vim.cmd("colorscheme " .. color_theme)
+      require('lualine').setup({
+        options = { theme = color_theme }
+      })
+    end
   },
   {
     "nvim-treesitter/nvim-treesitter", -- Treesitter
