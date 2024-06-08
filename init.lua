@@ -84,6 +84,8 @@ vim.filetype.add({
   }
 })
 
+vim.keymap.set('n', '<leader>l', '<cmd>:Lazy<CR>', { noremap = true, silent = true })
+
 local color_theme = "tokyonight"
 
 -- Lazy load plugins with lazy.nvim
@@ -182,8 +184,6 @@ require("lazy").setup({
     "folke/neodev.nvim", opts = {}
   },
 })
-
-vim.keymap.set('n', '<leader>l', '<cmd>:Lazy<CR>', { noremap = true, silent = true })
 
 -- Bring all configuration files from lua folder
 require('nguyen')

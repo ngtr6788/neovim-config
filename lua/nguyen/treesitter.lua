@@ -2,6 +2,11 @@ require('nvim-treesitter.configs').setup {
   -- A list of parser names, or "all"
   ensure_installed = { "lua", "vim" },
 
+  -- List of parsers to ignore installing (or "all")
+  ignore_install = {},
+
+  modules = {},
+
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
 
