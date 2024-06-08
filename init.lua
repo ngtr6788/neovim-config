@@ -78,6 +78,12 @@ if vim.fn.has('win16') == 1 or vim.fn.has('win32') == 1 or vim.fn.has('win64') =
   ]]
 end
 
+vim.filetype.add({
+  extension = {
+    typ = 'typst'
+  }
+})
+
 local color_theme = "tokyonight"
 
 -- Lazy load plugins with lazy.nvim
