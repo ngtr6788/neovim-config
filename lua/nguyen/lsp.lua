@@ -32,3 +32,11 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({select = true}),
   }
 })
+
+local dart_lsp = lsp_zero.build_options('dartls', {})
+
+require('flutter-tools').setup({
+  lsp = {
+    capabilities = dart_lsp.capabilities
+  }
+})
