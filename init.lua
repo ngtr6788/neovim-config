@@ -165,7 +165,7 @@ require("lazy").setup({
   },
   {
     "lewis6991/gitsigns.nvim", -- Git Signs
-    config = function () require('gitsigns').setup() end,
+    config = function() require('gitsigns').setup() end,
   },
   {
     "tpope/vim-fugitive", -- vim-fugitive
@@ -178,7 +178,7 @@ require("lazy").setup({
   },
   {
     "numToStr/Comment.nvim", -- Comment plugin
-    config = function () require('Comment').setup() end,
+    config = function() require('Comment').setup() end,
   },
   {
     "folke/neodev.nvim", opts = {}

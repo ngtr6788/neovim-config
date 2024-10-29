@@ -16,14 +16,14 @@ require('nvterm').setup({
   }
 })
 
-local toggle_modes = {'n', 't'}
+local toggle_modes = { 'n', 't' }
 
 -- Memory aid: [s]hell [d]own | [v]ertical | [f]loat
 local directions = { sd = 'horizontal', sv = 'vertical', sf = 'float' }
 
 for k, v in pairs(directions) do
   vim.keymap.set(toggle_modes, '<leader>' .. k,
-    function () require('nvterm.terminal').toggle(v) end,
+    function() require('nvterm.terminal').toggle(v) end,
     { noremap = true, silent = true }
   )
 end
