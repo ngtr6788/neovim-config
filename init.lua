@@ -191,7 +191,11 @@ require("lazy").setup({
       'stevearc/dressing.nvim', -- optional for vim.ui.select
     },
     config = true,
-  }
+  },
+  {
+    'stevearc/conform.nvim',
+    opts = {},
+  },
 })
 
 -- Bring all configuration files from lua folder
