@@ -86,7 +86,7 @@ vim.filetype.add({
 
 vim.keymap.set('n', '<leader>l', '<cmd>:Lazy<CR>', { noremap = true, silent = true })
 
-local color_theme = "tokyonight"
+local color_theme = "gruvbox"
 
 -- Lazy load plugins with lazy.nvim
 require("lazy").setup({
