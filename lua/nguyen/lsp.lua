@@ -11,7 +11,7 @@ require("mason-lspconfig").setup({
   handlers = {
     lsp_zero.default_setup
   },
-  ensure_installed = { "tsserver", "pyright", "rust_analyzer", "eslint", "lua_ls", "vimls" }
+  ensure_installed = {}
 })
 
 local cmp = require('cmp')
