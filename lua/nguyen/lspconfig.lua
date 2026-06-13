@@ -26,3 +26,10 @@ lspconfig.lua_ls.setup({
     }
   }
 })
+
+lspconfig.tinymist.setup({
+  root_dir = function(fname)
+    return require("lspconfig.util").root_pattern("typst.toml", ".git")(fname)
+      or vim.fn.fnamemodify(fname, ":h")
+  end,
+})

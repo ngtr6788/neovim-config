@@ -196,7 +196,17 @@ require("lazy").setup({
     'stevearc/conform.nvim',
     opts = {},
   },
+  {
+    'chomosuke/typst-preview.nvim',
+    lazy = false, -- or ft = 'typst'
+    version = '1.*',
+    opts = {
+      dependencies_bin = { tinymist = 'tinymist' }
+    }, -- lazy.nvim will implicitly calls `setup {}`
+  }
 })
+
+-- vim.filetype.add({ extension = { typ = "typst" } })
 
 -- Bring all configuration files from lua folder
 require('nguyen')
