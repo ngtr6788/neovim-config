@@ -209,7 +209,7 @@ require("lazy").setup({
   }
 })
 
-vim.cmd("colorscheme github_dark")
+vim.cmd("colorscheme gruvbox-material")
 
 -- Bring all configuration files from lua folder
 require('nguyen')
