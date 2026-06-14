@@ -86,8 +86,6 @@ vim.filetype.add({
 
 vim.keymap.set('n', '<leader>l', '<cmd>:Lazy<CR>', { noremap = true, silent = true })
 
-local color_theme = "gruvbox"
-
 -- Lazy load plugins with lazy.nvim
 require("lazy").setup({
   {
@@ -95,6 +93,12 @@ require("lazy").setup({
   },
   {
     "folke/tokyonight.nvim", -- Tokyo night theme
+  },
+  {
+    "sainnhe/gruvbox-material", -- Gruvbox Material
+  },
+  {
+    'projekt0n/github-nvim-theme' -- Github
   },
   {
     "nvim-lua/plenary.nvim", -- Telescope dependency
@@ -106,9 +110,8 @@ require("lazy").setup({
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
-      vim.cmd("colorscheme " .. color_theme)
       require('lualine').setup({
-        options = { theme = color_theme }
+        options = { theme = "auto" }
       })
     end
   },
@@ -206,7 +209,7 @@ require("lazy").setup({
   }
 })
 
--- vim.filetype.add({ extension = { typ = "typst" } })
+vim.cmd("colorscheme github_dark")
 
 -- Bring all configuration files from lua folder
 require('nguyen')
